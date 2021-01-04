@@ -1,0 +1,32 @@
+{
+  "name": "linkedlists",
+  "version": "1.0.0",
+  "description": "Linked List integration in TypeScript",
+  "main": "LinkedList.js",
+  "scripts": {
+    "dev": "tsc-watch --onSuccess \"npm test && node ./build/src/sandbox.js\"",
+    "test": "mocha --require ts-node/register --watch-extension ts 'test/**/*.ts'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VincentMenzel/LinkedLists.git"
+  },
+  "author": {
+    "name": "Vincent Menzel",
+    "email": "vincentbmenzel@gmail.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VincentMenzel/LinkedLists/issues"
+  },
+  "homepage": "https://github.com/VincentMenzel/LinkedLists#readme",
+  "devDependencies": {
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3",
+    "@types/node": "^14.14.19",
+    "@types/chai": "^4.2.14",
+    "@types/mocha": "^8.2.0",
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1"
+  }
+}

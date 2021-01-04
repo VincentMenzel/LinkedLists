@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "commonjs",
+     "declaration": true,
+     "outDir": "./build",
+     "rootDir": "./",
+     "removeComments": true,
+    "strict": true,
+     "noImplicitAny": true,
+     "strictNullChecks": true,
+     "strictFunctionTypes": true,
+     "strictBindCallApply": true,
+     "strictPropertyInitialization": true,
+     "noImplicitThis": true,
+     "alwaysStrict": true,
+     "noImplicitReturns": true,
+     "moduleResolution": "node",
+     "rootDirs": [
+       "./src"
+     ],
+     "types": [
+       "node",
+       "mocha"
+     ],
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "exclude": [
+    "node_modules",
+    "test",
+    "**/*.d.ts"
+  ]
+}
