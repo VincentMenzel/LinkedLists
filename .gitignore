@@ -86,6 +86,9 @@ out
 .nuxt
 dist
 
+# build
+build
+
 # webstorm
 .idea
 

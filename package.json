@@ -2,10 +2,13 @@
   "name": "linkedlists",
   "version": "1.0.0",
   "description": "Linked List integration in TypeScript",
-  "main": "LinkedList.js",
+  "main": "build/src/sandbox.js",
   "scripts": {
-    "dev": "tsc-watch --onSuccess \"npm test && node ./build/src/sandbox.js\"",
-    "test": "mocha --require ts-node/register --watch-extension ts 'test/**/*.ts'"
+    "start": "node ./build/src/sandbox.js",
+    "compile": "tsc",
+    "test": "mocha --require ts-node/register --watch-extension ts 'test/**/*.ts'",
+    "dev": "tsc-watch --onSuccess \"npm run-script test:compile:run\"",
+    "test:compile:run": "npm run-script test && npm run-script compile && npm run-script start"
   },
   "repository": {
     "type": "git",
