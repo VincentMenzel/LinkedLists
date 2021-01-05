@@ -96,18 +96,18 @@ export class LinkedList implements ILinkedList {
     return true;
   }
 
-  public drawChain () {
+  public drawChain (): number[] {
     let currentNode = this.head || null;
-    if (currentNode === null) return;
 
-    let values: number[] = []
+    let values: number[] = [ ]
 
-      while(currentNode) {
+    while(currentNode) {
         values.push(currentNode.value)
         currentNode = currentNode.next
     }
 
-   console.log(`current LL:\t(${values.join(" => ")})`)
+    console.log(`current LL:\t(${values.join(" => ")})`)
+    return values;
   }
 }
 

@@ -23,6 +23,6 @@ interface ILinkedList {
 
   deleteTail(): boolean;
 
-  drawChain(): void;
+  drawChain(): number[];
 }
 
