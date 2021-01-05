@@ -37,6 +37,6 @@ npm run-script test
 
 
 ## Sandbox
-All code underneath the `Testing the functionality` comment is purely to test the functionality.
+All code underneath in the "sandbox.ts" file comment is purely to play with the functionality.
 Add your own code and try to break my code.
 If you manage please open an issue.
