@@ -10,15 +10,29 @@ In order to compile the project make sure
 
 are installed on the system
 
+## Running
+
 Compile and run the code with 
 ```bash
-tsc && node LinkedList.js
+npm run-script compile:run
+```
+
+Test before compiling and running.
+```bash
+npm run-script test:compile:run
+```
+
+## Development
+Run the following script when developing.
+This will recompile and run the code when files change.
+```bash
+npm run-script dev
 ```
 
 ## Testing
-Autorun tests on file change
+Run test
 ```bash
-npm test -- -w
+npm run-script test 
 ```
 
 

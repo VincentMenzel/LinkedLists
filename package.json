@@ -8,7 +8,8 @@
     "compile": "tsc",
     "test": "mocha --require ts-node/register --watch-extension ts 'test/**/*.ts'",
     "dev": "tsc-watch --onSuccess \"npm run-script test:compile:run\"",
-    "test:compile:run": "npm run-script test && npm run-script compile && npm run-script start"
+    "compile:run": "npm run-script compile && npm run-script start",
+    "test:compile:run": "npm run-script test && npm run-script compile:run"
   },
   "repository": {
     "type": "git",
